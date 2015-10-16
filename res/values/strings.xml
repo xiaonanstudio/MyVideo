@@ -4,5 +4,9 @@
     <string name="app_name">MyVideo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="idle_tag">- -</string>
+
+    <!-- The app -->
+    <string name="quanjian_fisrt">中国自然医学第一品牌—权健</string>
 
 </resources>

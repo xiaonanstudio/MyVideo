@@ -29,6 +29,9 @@
             android:name="com.njb.test.audio.WebActivity"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape" />
+        <activity
+            android:name="com.njb.test.audio.VideoListActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

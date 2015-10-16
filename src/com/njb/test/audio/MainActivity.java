@@ -7,6 +7,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.njb.test.audio.model.MyConst;
+
 public class MainActivity extends Activity {
 	private static final long OUT_TIME = 2000;
 	private long mTime;
@@ -22,7 +24,27 @@ public class MainActivity extends Activity {
 	}
 
 	public void onBtnClick(View view) {
-		startActivity(new Intent(this, WebActivity.class));
+		Intent intent = new Intent(this, VideoListActivity.class);
+		switch (view.getId()) {
+		case R.id.btn_news:
+			intent.putExtra(MyConst.TITLE, "权健新闻");
+			intent.putExtra(MyConst.NAME_LIST, new String[] { "权健新闻 2015.10.17", "权健新闻 2015.10.17", "权健新闻 2015.9.17",
+					"权健新闻 2015.9.17", "权健新闻 2015.10.1", "权健新闻 2015.10.1" });
+			intent.putExtra(
+					MyConst.URL_LIST,
+					new String[] {
+							"http://quanjiantv.com/quanjian/meizhouxinwen/2015/1015/28.html",
+							"http://www.CuPlayer.com/player/player.swf?JcScpVideoPath=http://wany.s.wcsapi.biz.matocloud.com/jianxinwen 3 2015.10.17.flv",
+							"http://quanjiantv.com/quanjian/meizhouxinwen/2015/0917/16.html",
+							"http://quanjiantv.com/quanjian/meizhouxinwen/2015/0917/16.html",
+							"http://quanjiantv.com/quanjian/meizhouxinwen/2015/0930/26.html",
+							"http://www.CuPlayer.com/player/player.swf?JcScpVideoPath=http://wany.s.wcsapi.biz.matocloud.com/quanjinanxinwen-2-2015.10.1.flv" });
+			break;
+
+		default:
+			Toast.makeText(this, "I am working hard to develop ...", Toast.LENGTH_SHORT).show();
+		}
+		startActivity(intent);
 	}
 
 	@Override

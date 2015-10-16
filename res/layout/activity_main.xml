@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="中国自然医学第一品牌—权健"
+            android:text="@string/quanjian_fisrt"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
