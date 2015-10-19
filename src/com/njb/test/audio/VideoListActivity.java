@@ -49,5 +49,6 @@ public class VideoListActivity extends Activity implements AdapterView.OnItemCli
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		Toast.makeText(this, mUrlList[position], Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(this, VideoPlayActivity.class));
 	}
 }

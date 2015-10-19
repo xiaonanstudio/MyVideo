@@ -9,6 +9,8 @@
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +20,7 @@
         <activity
             android:name="com.njb.test.audio.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +33,15 @@
             android:screenOrientation="landscape" />
         <activity
             android:name="com.njb.test.audio.VideoListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.njb.test.audio.VideoSurfaceTest"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.njb.test.audio.VideoPlayActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.njb.test.audio.CustomerVideoPlayer"
             android:screenOrientation="landscape" />
     </application>
 

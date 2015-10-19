@@ -15,6 +15,8 @@ public class WebActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_web);
 		mWebView = (WebView) findViewById(R.id.webview);
+		mWebView.setFocusable(true);
+		mWebView.requestFocus();
 
 		WebSettings webSettings = mWebView.getSettings();
 		webSettings.setPluginState(PluginState.ON);
@@ -23,7 +25,9 @@ public class WebActivity extends Activity {
 		webSettings.setSupportZoom(false);
 		webSettings.setLoadWithOverviewMode(true);
 
-		mWebView.loadUrl("http://quanjiantv.com/quanjian/");
+		mWebView.loadUrl("http://down.233.com/2013_2014/2014/cy/kuaijijichu_jingjiang_quanguoban_ldd/1_zirf6m9fk2wtjhp2ya21rzwtucmtjd51lrq520jv.mp4");
+		// mWebView.loadUrl("http://quanjiantv.com/index.html");
+		// mWebView.loadUrl("http://v.youku.com/v_show/id_XMjU5ODMyMTMy.html");
 	}
 
 	@Override
