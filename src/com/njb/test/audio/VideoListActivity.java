@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.njb.test.audio.adapter.VideoItemAdapter;
 import com.njb.test.audio.model.MyConst;
@@ -48,7 +47,7 @@ public class VideoListActivity extends Activity implements AdapterView.OnItemCli
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		Toast.makeText(this, mUrlList[position], Toast.LENGTH_SHORT).show();
+		// Toast.makeText(this, mUrlList[position], Toast.LENGTH_SHORT).show();
 		startActivity(new Intent(this, VideoPlayActivity.class));
 	}
 }
