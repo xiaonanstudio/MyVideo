@@ -41,6 +41,10 @@ public class MainActivity extends Activity {
 							"http://www.CuPlayer.com/player/player.swf?JcScpVideoPath=http://wany.s.wcsapi.biz.matocloud.com/quanjinanxinwen-2-2015.10.1.flv" });
 			break;
 
+		case R.id.btn_liveroom:
+			intent = new Intent(this, LivingActivity.class);
+			break;
+
 		default:
 			Toast.makeText(this, "I am working hard to develop ...", Toast.LENGTH_SHORT).show();
 		}

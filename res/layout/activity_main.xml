@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/bg_green_dark"
+            android:background="@drawable/bg_greendark_selector"
             android:onClick="onLaunchWebActivity"
             android:padding="6dp"
             android:text="WebTest"
@@ -64,7 +64,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_red"
+                    android:background="@drawable/bg_red_selector"
                     android:onClick="onBtnClick"
                     android:text="权健新闻" />
 
@@ -74,7 +74,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_orange"
+                    android:background="@drawable/bg_orange_selector"
                     android:onClick="onBtnClick"
                     android:text="权健直播间" />
 
@@ -84,7 +84,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_sy"
+                    android:background="@drawable/bg_sy_selector"
                     android:onClick="onBtnClick"
                     android:text="权健文化" />
 
@@ -94,7 +94,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_purple"
+                    android:background="@drawable/bg_purple_selector"
                     android:onClick="onBtnClick"
                     android:text="权健会议集锦" />
             </TableRow>
@@ -110,7 +110,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_green"
+                    android:background="@drawable/bg_green_selector"
                     android:onClick="onBtnClick"
                     android:text="权健产品" />
 
@@ -120,7 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_purple"
+                    android:background="@drawable/bg_purple_selector"
                     android:onClick="onBtnClick"
                     android:text="讲述权健人自己的故事" />
 
@@ -130,7 +130,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_blue"
+                    android:background="@drawable/bg_blue_selector"
                     android:onClick="onBtnClick"
                     android:text="权健肿瘤医院" />
 
@@ -140,7 +140,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_pink"
+                    android:background="@drawable/bg_pink_selector"
                     android:onClick="onBtnClick"
                     android:text="权健健康讲堂" />
             </TableRow>
@@ -156,7 +156,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_sy"
+                    android:background="@drawable/bg_sy_selector"
                     android:onClick="onBtnClick"
                     android:text="权健一家亲" />
 
