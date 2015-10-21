@@ -19,6 +19,12 @@ import android.widget.LinearLayout;
 
 import com.njb.test.audio.model.MyConst;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class VideoSurfaceTest extends Activity implements OnCompletionListener, OnErrorListener, OnInfoListener,
 		OnPreparedListener, OnSeekCompleteListener, OnVideoSizeChangedListener, SurfaceHolder.Callback {
 	private Display currDisplay;

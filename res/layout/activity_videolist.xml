@@ -47,7 +47,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_small"
-            android:layout_weight="3.4"
+            android:layout_weight="3.6"
             android:contentDescription="@string/idle_tag"
             android:scaleType="fitCenter"
             android:src="@drawable/reqiqiu" />
@@ -57,7 +57,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_small"
-            android:layout_weight="6.6"
+            android:layout_weight="6.4"
             android:background="@drawable/bg_items"
             android:horizontalSpacing="@dimen/margin_large"
             android:numColumns="4"

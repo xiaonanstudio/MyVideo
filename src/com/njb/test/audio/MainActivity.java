@@ -15,11 +15,15 @@ import android.widget.Toast;
 
 import com.njb.test.audio.model.MyConst;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class MainActivity extends Activity {
-	private static final long OUT_TIME = 2000;
-	private static final long LEGAL_TIME = 1000 * 60 * 60 * 24 * 7;
 
-	private long mTime;
+	private static final long LEGAL_TIME = 1000 * 60 * 60 * 24 * 7;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,7 @@ public class MainActivity extends Activity {
 		if (sp.contains(MyConst.LEGAL_TIME)) {
 			if (System.currentTimeMillis() - sp.getLong(MyConst.LEGAL_TIME, Long.valueOf("1445435710252")) > LEGAL_TIME) {
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
+				builder.setCancelable(false);
 				builder.setTitle("Out Of Time");
 				builder.setMessage("The application can be used in 7 days, it is out of time now, please pay for it.");
 				builder.setPositiveButton("OK", new OnClickListener() {
@@ -130,13 +135,18 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-			if (System.currentTimeMillis() - mTime > OUT_TIME) {
-				mTime = System.currentTimeMillis();
-				Toast.makeText(this, "One more click to exit.", Toast.LENGTH_SHORT).show();
-			} else {
-				finish();
-			}
-			return true;
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setTitle("Exit");
+			builder.setMessage("Exit the application ?");
+			builder.setPositiveButton("Exit", new OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					finish();
+				}
+			});
+			builder.setNegativeButton("Cancel", null);
+			builder.create().show();
 		}
 		return super.onKeyDown(keyCode, event);
 	}

@@ -8,6 +8,12 @@ import android.widget.VideoView;
 
 import com.njb.test.audio.model.MyConst;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class VideoPlayActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {

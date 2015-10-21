@@ -9,6 +9,12 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public abstract class TestActivity extends Activity implements Handler.Callback {
 	private TextView mTextView;
 	private View mLayout;

@@ -8,6 +8,12 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class CustomerVideoPlayer extends Activity implements MediaPlayer.OnErrorListener,
 		MediaPlayer.OnCompletionListener {
 	public static final String TAG = "VideoPlayer";

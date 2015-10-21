@@ -13,6 +13,12 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.MediaController.MediaPlayerControl;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class CustomerVideoView extends SurfaceView implements MediaPlayerControl {
 	private static String TAG = "customer.videoplayer";
 	private boolean pause;

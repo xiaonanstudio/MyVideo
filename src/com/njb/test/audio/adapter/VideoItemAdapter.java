@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 import com.njb.test.audio.R;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class VideoItemAdapter extends BaseAdapter {
 
 	private Context mContext;

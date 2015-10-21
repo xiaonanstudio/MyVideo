@@ -9,6 +9,12 @@ import android.webkit.WebSettings;
 import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class WebActivity extends Activity {
 	private WebView mWebView;
 

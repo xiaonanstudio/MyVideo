@@ -1,5 +1,11 @@
 package com.njb.test.audio.model;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class MyConst {
 	public static final String TAG = "______njb______";
 	public static final String SP = "mSP";

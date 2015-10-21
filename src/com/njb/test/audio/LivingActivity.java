@@ -16,6 +16,12 @@ import android.view.SurfaceView;
 
 import com.njb.test.audio.model.MyConst;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class LivingActivity extends Activity implements OnBufferingUpdateListener, OnCompletionListener,
 		OnPreparedListener, OnVideoSizeChangedListener, SurfaceHolder.Callback {
 

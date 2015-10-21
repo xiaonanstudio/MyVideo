@@ -11,6 +11,12 @@ import android.widget.TextView;
 import com.njb.test.audio.adapter.VideoItemAdapter;
 import com.njb.test.audio.model.MyConst;
 
+/**
+ * 
+ * @author XiaoNan
+ * 
+ * @see xiaonanstudio@163.com
+ */
 public class VideoListActivity extends Activity implements AdapterView.OnItemClickListener {
 
 	private GridView mGridView;
