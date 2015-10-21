@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import com.njb.test.audio.model.MyConst;
+
 public class VideoPlayActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,7 @@ public class VideoPlayActivity extends Activity {
 		// http://ziran-yun-test001.d.wcsapi.biz.matocloud.com/app01.mp4
 		// http://ziran-yun-test001.d.wcsapi.biz.matocloud.com/1080p.mp4
 		// http://ziran-yun-test001.d.wcsapi.biz.matocloud.com/720p.mp4
-		Uri uri = Uri.parse("http://ziran-yun-test001.d.wcsapi.biz.matocloud.com/720p.mp4");
+		Uri uri = Uri.parse(getIntent().getStringExtra(MyConst.URL));
 		VideoView videoView = (VideoView) this.findViewById(R.id.video_view);
 		videoView.setMediaController(new MediaController(this));
 		videoView.setVideoURI(uri);

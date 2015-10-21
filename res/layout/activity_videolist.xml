@@ -17,7 +17,7 @@
             android:layout_marginLeft="10dp"
             android:text="@string/idle_tag"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="@dimen/text_size_large" />
 
         <View
             android:layout_width="0dp"
@@ -30,7 +30,7 @@
             android:layout_margin="2dp"
             android:background="@drawable/bg_green_dark"
             android:onClick="onBack"
-            android:padding="6dp"
+            android:padding="@dimen/margin_small"
             android:text="@string/quanjian_fisrt"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -44,23 +44,26 @@
         android:gravity="center_vertical" >
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="3.4"
             android:contentDescription="@string/idle_tag"
+            android:scaleType="fitCenter"
             android:src="@drawable/reqiqiu" />
 
         <GridView
             android:id="@+id/gridview"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="6.6"
             android:background="@drawable/bg_items"
-            android:horizontalSpacing="10dp"
+            android:horizontalSpacing="@dimen/margin_large"
             android:numColumns="4"
-            android:padding="10dp"
+            android:padding="@dimen/margin_large"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="10dp" >
+            android:verticalSpacing="@dimen/margin_large" >
         </GridView>
     </TableRow>
 

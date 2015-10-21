@@ -13,10 +13,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/margin_large"
             android:text="@string/quanjian_fisrt"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="@dimen/text_size_large" />
 
         <View
             android:layout_width="0dp"
@@ -29,7 +29,7 @@
             android:layout_margin="2dp"
             android:background="@drawable/bg_greendark_selector"
             android:onClick="onLaunchWebActivity"
-            android:padding="6dp"
+            android:padding="@dimen/margin_small"
             android:text="WebTest"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -43,18 +43,22 @@
         android:gravity="center_vertical" >
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="3.4"
+            android:contentDescription="@string/quanjian_fisrt"
+            android:scaleType="fitCenter"
             android:src="@drawable/quanjianyixue" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="6.6"
             android:background="@drawable/bg_items"
             android:orientation="vertical"
-            android:padding="6dp" >
+            android:padding="@dimen/margin" >
 
             <TableRow
                 android:layout_width="match_parent"
