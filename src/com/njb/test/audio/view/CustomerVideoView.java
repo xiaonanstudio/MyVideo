@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.MediaController.MediaPlayerControl;
 
+import com.njb.test.audio.model.MyConst;
+
 /**
  * 
  * @author XiaoNan
@@ -20,7 +22,6 @@ import android.widget.MediaController.MediaPlayerControl;
  * @see xiaonanstudio@163.com
  */
 public class CustomerVideoView extends SurfaceView implements MediaPlayerControl {
-	private static String TAG = "customer.videoplayer";
 	private boolean pause;
 	private boolean seekBackward;
 	private boolean seekForward;
@@ -151,7 +152,7 @@ public class CustomerVideoView extends SurfaceView implements MediaPlayerControl
 		try {
 			this.mediaPlayer.setDataSource(this.context, this.videoUri);
 		} catch (Exception e) {
-			Log.e(TAG, e.getMessage());
+			Log.e(MyConst.TAG, e.getMessage());
 			throw new RuntimeException(e);
 		}
 		this.mediaPlayer.prepareAsync();
@@ -192,7 +193,7 @@ public class CustomerVideoView extends SurfaceView implements MediaPlayerControl
 				width = height * videoWidth / videoHeight;
 			}
 		}
-		Log.i(TAG, "setting size: " + width + " " + height);
+		Log.i(MyConst.TAG, "setting size: " + width + " " + height);
 		setMeasuredDimension(width, height);
 	}
 

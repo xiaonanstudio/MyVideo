@@ -126,8 +126,13 @@ public class MainActivity extends Activity {
 			intent.putExtra(MyConst.TITLE, "权健一家亲");
 			break;
 
+		case R.id.btn_custom:
+			intent.putExtra(MyConst.TITLE, "自定义");
+			break;
+
 		default:
 			Toast.makeText(this, "I am working hard to develop ...", Toast.LENGTH_SHORT).show();
+			return;
 		}
 		startActivity(intent);
 	}
